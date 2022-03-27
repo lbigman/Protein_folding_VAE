@@ -1,0 +1,19 @@
+# protein_VAE
+I built here a Variational Auto Encoder to analyze data from molecular dynamics simulations. 
+The data was generated using a native topology based coarse-grained model, where each amino acid is represented by a single bead in the position of the C-alpha atom.
+
+Files include: 
+1. model.py - an encoder-decoder architechture, without variation.
+2. vae.py - same as model, but with variation.
+3. Folding_VAE.ipynb - project notebook
+
+In the project notebook, the trajectory data is loaded using internal coordinates, in the form of a distance matrix, describing the distance between every pair of beads i and j in the protein.
+Simulations run for the SH3 protein (PDB ID 1srl)
+
+Results from similar simulations and full technical details about the simulations can be found at: 
+1. L.S. Bigman, Y. Levy, Entropy-enthalpy compensation in conjugated proteins, Chem. Phys. 514 (2018) 95–105. https://doi.org/10.1016/j.chemphys.2018.04.007.
+2. L.S. Bigman, Y. Levy, Stability Effects of Protein Mutations: The Role of Long-Range Contacts, J. Phys. Chem. B. 122 (2018) 11450–11459. https://doi.org/10.1021/acs.jpcb.8b07379.
+
+Project originally conducted for the course "Practicle deep learning for scientists", at the Weizmann Institute of Science, 2021.
+Written together with Deena Roller.
+
